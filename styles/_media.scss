@@ -1,0 +1,224 @@
+@media screen and (max-width: 1000px) {
+    .theme-btn {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    .header {
+        padding: 0;
+        min-height: 100vh;
+        overflow: scroll;
+        margin-left: 2rem;
+    }
+    .header-content {
+        grid-template-columns: repeat(-2,1fr);
+    }
+    .header .right-header {
+        padding: 0 !important;
+        grid-row: 1;
+        margin-left: 2rem;
+    }
+    .header .right-header p {
+        margin-left: 50px !important;
+        font-size: 17px;
+    }
+    .header .right-header h1 {
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .left-header .h-shape {
+        display: none;
+    }
+
+    // .left-header {
+    //     margin-left: 3.5rem;
+    //     margin-right: 3.5rem;
+    // }
+
+    .left-header .image {
+        // margin-top: 5rem;
+        margin-bottom: 3.5rem;
+        width: 30% ;
+        height: 30% !important ;
+        // object-fit:cover;
+
+    }
+
+    .left-header .image img{
+        position: relative;
+        width: 20% !important;
+        height: 50% !important;
+    }
+    .controls {
+        bottom: 0;
+        top: auto;
+        display: flex;
+        flex-direction: row;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-2);
+        .control {
+            margin: 1rem 0.4rem;
+            width: 30px;
+            height: 30px;
+            font-size: small;
+        }
+    }
+
+    .section {
+        padding: 2rem 2.5rem;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        .right-about {
+            margin-left: 5rem;
+            // grid-template-columns: 1fr;
+            padding: 0 3rem;
+            padding-top: 2.5rem;
+            .about-item .abt-text .small-text {
+                padding-bottom: 1rem;
+            }
+        }
+        .left-about {
+            padding: 2rem;
+            p {
+                padding: 2rem;
+            }
+        }
+    }
+
+    .about-stats {
+        .progress-bars {
+            grid-template-columns: 1fr;
+        }
+    }
+    .portfolios {
+        grid-template-columns: 1fr !important;
+        padding-bottom: 6rem;
+        padding-left: 6rem;
+    }
+
+    .contact-content-con {
+        flex-direction: column;
+        padding-right: 1rem;
+        .right-contact {
+            padding-bottom: 6rem;
+            padding-right: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bg-text{
+        opacity: .5;
+    }
+    .about-container {
+        grid-template-columns: 1fr;
+        .right-about {
+            grid-template-columns: 4fr;
+            padding-top: 2.5rem;
+            padding-right: 6rem;
+            .about-item .abt-text .small-text {
+                padding-bottom: 1rem;
+            }
+        }
+        .left-about {
+            padding: 2rem;
+            p {
+                padding: 2rem;
+            }
+        }
+    }
+    .left-header {
+        margin-left: 1rem;
+        display: none !important;
+    }
+    .left-header .image{
+        width: 100% !important;
+        height: 50% !important;
+           
+    }
+    .header-content{
+        display: flex
+    }
+}
+
+@media screen and (max-width: 1109px){
+    // .left-header .image {
+    //    width: 50%;
+    //    height: 50px;
+    // }
+
+    // .left-header .image img {
+    //     width: 50px;
+    //     height: 50px;
+    // }
+}
+   
+
+@media screen and (max-width: 1432px) {
+    .contact-content-con{
+        margin-right: 6rem;
+    }
+    .section {
+        padding: 2rem 2.5rem;
+    }
+
+    .right-about {
+        grid-template-columns: 1fr;
+        width: 70%;
+    }
+    .progress-bar {
+        width: 90%;
+    }
+    .header {
+        padding: 0;
+        overflow-y: scroll;
+    }
+
+    .header .right-header p {
+        margin-left: 50px !important;
+        font-size: 17px;
+    }
+    .header .right-header h1 {
+        font-size: 25px;
+        font-weight: bolder;
+        margin-right: 5rem;
+    }
+    // .left-header .h-shape {
+    //     // display: none;
+    // }
+
+    .left-header .image {
+        margin-top: 5rem;
+        margin-bottom: 3.5rem;
+        width: 70% !important;
+        height: 90% !important;
+        margin: 10px;
+        object-fit:cover;
+
+    }
+
+    .left-header .image img{
+        position: relative;
+        width: 90% !important;
+        height: 100% !important;
+    }
+
+
+    .portfolios {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 6rem;
+        padding-right: 100px;
+    }
+    .right-about {
+        // grid-template-columns: 1fr;
+        // padding: 0 3rem;
+        // padding-top: 2.5rem;
+        .about-item .abt-text .small-text {
+            padding-bottom: 1rem;
+        }
+    }
+}
