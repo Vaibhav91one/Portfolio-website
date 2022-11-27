@@ -206,19 +206,22 @@ section {
 }
 .header-content .left-header .image {
     border-radius: var(--br-sm-2);
-    height: 90%;
-    width: 68%;
+    height: 80%;
+    width: 50%;
     margin-left: 4rem;
     background-color: var(--color-clipath);
     transition: all 0.4s ease-in-out;
+    padding: 0;
 }
 .header-content .left-header .image img {
-    width: 70%;
+    width: 60%;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
     display: flex;
+    margin-left: 4rem;
     transition: all 0.4s ease-in-out;
     filter: grayscale(100%);
+    padding: 0;
 }
 .header-content .left-header .image img:hover {
     filter: grayscale(0);

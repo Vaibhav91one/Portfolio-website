@@ -217,21 +217,24 @@ section {
 
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
-  height: 90%;
-  width: 68%;
+  height: 80%;
+  width: 50%;
   margin-left: 4rem;
   background-color: var(--color-clipath);
   transition: all 0.4s ease-in-out;
+  padding: 0;
 }
 
 .header-content .left-header .image img {
-  width: 70%;
+  width: 60%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   display: flex;
+  margin-left: 4rem;
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
+  padding: 0;
 }
 
 .header-content .left-header .image img:hover {
@@ -830,29 +833,57 @@ section {
   }
 }
 @media screen and (max-width: 600px) {
+  .theme-btn {
+    margin-right: 4rem;
+  }
+  body {
+    margin: 8px;
+  }
   .bg-text {
     opacity: 0.5;
   }
   .about-container {
-    grid-template-columns: 1fr;
+    margin-right: 10px;
   }
   .about-container .right-about {
     grid-template-columns: 4fr;
     padding-top: 2.5rem;
     padding-right: 6rem;
   }
-  .about-container .right-about .about-item .abt-text .small-text {
+  .about-container .right-about .about-item {
+    transform: translateX(-40%);
+  }
+  .about-container .right-about .abt-text .large-text {
+    font-size: 20px;
+  }
+  .about-container .right-about .small-text {
     padding-bottom: 1rem;
+    font-size: 20px;
   }
   .about-container .left-about {
-    padding: 2rem;
+    display: block;
+    font-size: 20px;
+    transform: translateX(-15%);
   }
-  .about-container .left-about p {
-    padding: 2rem;
+  .about-container .left-about h4 {
+    font-size: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .about-container .left-about .info {
+    display: none;
+  }
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr) !important;
+    padding-bottom: 6rem;
+    padding-left: 6rem;
+  }
+  #home {
+    overflow: hidden;
   }
   .left-header {
-    margin-left: 1rem;
     display: none !important;
+    scroll-behavior: smooth;
   }
   .left-header .image {
     width: 100% !important;
@@ -860,6 +891,11 @@ section {
   }
   .header-content {
     display: flex;
+    margin-bottom: 5rem;
+  }
+  .header-content .right-header .name {
+    padding-left: 3rem;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 1432px) {
