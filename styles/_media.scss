@@ -4,6 +4,11 @@
         height: 40px;
         margin-right: 10px;
     }
+    .theme-btn-2 {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
     .header {
         padding: 0;
         min-height: 100vh;
@@ -111,6 +116,9 @@
 
 @media screen and (max-width: 600px) {
     .theme-btn {
+        margin-right: 4rem;
+    }
+    .theme-btn-2 {
         margin-right: 4rem;
     }
     body {

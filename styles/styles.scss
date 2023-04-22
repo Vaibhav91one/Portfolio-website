@@ -181,6 +181,28 @@ section {
         color: var(--color-white);
     }
 }
+.theme-btn-2 {
+    display: flex;
+    background-color: var(--color-grey-4);
+    width: 50px;
+    height: 50px;
+    top: 15%;
+    right: 3%;
+    position: fixed;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow-1);
+    cursor: pointer;
+    &:active {
+        transition: all 0.1s ease-in-out;
+        transform: translateY(-5%);
+    }
+    i {
+        font-size: 25px;
+        color: var(--color-white);
+    }
+}
 /* header-content*/
 
 .header-content {
@@ -265,6 +287,7 @@ section {
     display: flex;
     align-self: flex-start;
     margin-left: 50px;
+    transition: all 0.4s ease-in-out;
 }
 
 .main-btn {
@@ -291,6 +314,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.4s ease-in-out;
 }
 
 // .main-btn:hover {
@@ -322,6 +346,7 @@ section {
     background-color: var(--color-secondary);
     transform: translateX(0);
     transition: all 0.4s ease-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .main-title {
@@ -362,8 +387,9 @@ section {
 
 .right-about {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
+    
+    // grid-gap: rem;
 }
 
 .right-about .about-item {
@@ -372,7 +398,10 @@ section {
     box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.3);
     margin: 10px;
     border-radius: 10px;
-    height: 10rem;
+    // height: 10rem;
+    padding: 10px;
+    font-size: 20px;
+    width: 90%;
 }
 
 .right-about .about-item:hover {
@@ -394,12 +423,13 @@ section {
     color: var(--color-secondary);
     font-size: 50px;
     font-weight: 700;
-    padding: 1rem 1rem;
+    // padding: 1rem 1rem;
 }
 
 .small-text {
-    padding-left: 3rem;
-    padding-right: 1rem;
+    // padding-left: 3rem;
+    // padding-right: 1rem;
+    padding: 5px;
     padding-bottom: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -408,7 +438,8 @@ section {
 }
 
 .left-about {
-    padding-right: 2rem;
+    // padding-right: 2rem;
+    margin-right: 10rem;
 }
 .about-container .left-about {
     margin-bottom: 10px;
@@ -421,18 +452,20 @@ section {
 ul li{
     list-style: circle;
     margin: 10px;
+    font-size: 20px;
 }
     
-.left-about h4 {
-    text-transform: uppercase;
-    font-size: 2rem;
-}
 
 .left-about p {
     padding: 1rem;
     line-height: 2rem;
     font-size: 15px;
     // color: var(--color-grey-1);
+}
+.left-about .btn-con{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
 }
 
 /* About Stats */
@@ -499,7 +532,7 @@ ul li{
 .about-stats .progress-bars .progress-bar .progress-title .con {
     font-weight: 10rem;
     font-size: 1rem;
-    color: var(--color-secondary);
+    color: var(--color-secondary)!important;
     transition: all 0.4s ease-in-out;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
@@ -745,7 +778,9 @@ ul li{
         
     }
 }
-
+audio {
+    display: none;
+}
 .right-contact .submit-btn {
     display: flex;
     justify-content: flex-start;
