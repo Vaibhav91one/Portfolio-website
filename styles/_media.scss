@@ -10,48 +10,48 @@
         margin-right: 10px;
     }
     .header {
-        padding: 0;
-        min-height: 100vh;
-        overflow: scroll;
-        margin-left: 2rem;
+        width: 100%;
+        // padding: 0;
+        // min-height: 100vh;
+        // overflow: scroll;
+        // margin-left: 2rem;
     }
     .header-content {
-        grid-template-columns: repeat(-2, 1fr);
+        // grid-template-columns: repeat(-2, 1fr);
     }
     .header .right-header {
-        padding: 0 !important;
+        width: 100%;
+        margin-left: 10rem;
+        // padding: 0 !important;
         grid-row: 1;
-        margin-left: 2rem;
+        // margin-left: 4rem;
+        display: flex;
     }
-    .header .right-header p {
-        margin-left: 50px !important;
-        font-size: 17px;
-    }
-    .header .right-header h1 {
-        font-size: 25px;
-        font-weight: bolder;
-    }
+    // .header .right-header p {
+    //     // margin-left: 50px !important;
+    //     font-size: 17px;
+    // }
+    // .header .right-header h1 {
+    //     font-size: 25px;
+    //     font-weight: bolder;
+    // }
     .left-header .h-shape {
         display: none;
     }
 
-    // .left-header {
-    //     margin-left: 3.5rem;
-    //     margin-right: 3.5rem;
-    // }
 
     .left-header .image {
         // margin-top: 5rem;
         margin-bottom: 3.5rem;
-        width: 30%;
+        width: 100%;
         height: 30% !important ;
         // object-fit:cover;
     }
 
     .left-header .image img {
-        position: relative;
-        width: 20% !important;
-        height: 50% !important;
+        // position: relative;
+        // width: 20% !important;
+        // height: 50% !important;
     }
     .controls {
         bottom: 0;
@@ -166,24 +166,25 @@
     }
 
     #home {
-        overflow: hidden;
+        // overflow: hidden;
     }
-    .left-header {
+    .left-header{
         // margin-left: 1rem;
-        display: none !important;
-        scroll-behavior: smooth;
+        grid-row: 3;
+
+        // scroll-behavior: smooth;
     }
     .left-header .image {
-        width: 100% !important;
-        height: 50% !important;
+        margin-right: auto;
+        margin-left: auto;
     }
     .header-content {
-        display: flex;
-        margin-bottom: 5rem;
+        width: 100%;
     }
-    .header-content .right-header .name {
-        padding-left: 3rem;
-        font-size: 30px;
+    .header-content .right-header {
+        display: flex;
+        justify-content: center;
+        margin-left: 7rem;
     }
 }
 
@@ -233,18 +234,15 @@
     // }
 
     .left-header .image {
-        margin-top: 5rem;
-        margin-bottom: 3.5rem;
         width: 70% !important;
         height: 90% !important;
-        margin: 10px;
-        object-fit: cover;
     }
 
     .left-header .image img {
-        position: relative;
-        width: 90% !important;
-        height: 100% !important;
+        // position: relative;
+        // width: 90% !important;
+        // height: 100% !important;
+    // border-radius: none !important;
     }
 
     .portfolios {

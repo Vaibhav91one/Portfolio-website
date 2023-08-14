@@ -42,15 +42,12 @@ function PageTransition(){
     Themebtn2.addEventListener("click", ()=>{
         // let element = document.getElementById('music');
         if(isPlaying == false){
-            console.log("True hora");
             audio.play()
             isPlaying = true;
         }
         else {
-            console.log("false hora");
             audio.pause()
             isPlaying = false;
-            console.log(isPlaying)
         }
         // element.classList.toggle("fas fa-pause");
     })

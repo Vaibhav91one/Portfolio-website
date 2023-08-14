@@ -212,8 +212,11 @@ section {
 }
 .header-content .left-header {
     display: flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    position: relative;
+    width: 100%;
+   
 }
 .header-content .left-header .h-shape {
     transition: all 0.4s ease-in-out;
@@ -224,26 +227,32 @@ section {
     left: 0;
     top: 0;
     z-index: -1;
-    clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+    clip-path: polygon(0 0, 36% 0, 49% 100%, 0% 100%);
 }
 .header-content .left-header .image {
+    
     border-radius: var(--br-sm-2);
     height: 80%;
     width: 50%;
-    margin-left: 4rem;
+    // margin-left: 4rem;
     background-color: var(--color-clipath);
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
     padding: 0;
+    &:hover{
+        box-shadow: 2px 1px 29px 0px rgba(0,0,0,0.75);
+        transform: translateY(-1%);
+    }
 }
 .header-content .left-header .image img {
-    width: 60%;
+    width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     display: flex;
-    margin-left: 4rem;
+    margin: auto;
     transition: all 0.4s ease-in-out;
     filter: grayscale(100%);
     padding: 0;
+    border-radius: var(--br-sm-2);
 }
 .header-content .left-header .image img:hover {
     filter: grayscale(0);
