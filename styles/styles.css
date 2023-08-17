@@ -219,16 +219,17 @@ section {
 }
 
 .header-content .left-header .h-shape {
+  display: none;
   transition: all 0.4s ease-in-out;
-  width: 65%;
+  width: 100%;
   height: 100%;
   background-color: var(--color-secondary);
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(0 0, 36% 0, 49% 100%, 0% 100%);
-          clip-path: polygon(0 0, 36% 0, 49% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 16% 0, 39% 100%, 0% 100%);
+          clip-path: polygon(0 0, 16% 0, 39% 100%, 0% 100%);
 }
 
 .header-content .left-header .image {
@@ -292,6 +293,7 @@ section {
 }
 
 .right-header p {
+  display: flex;
   margin: 20px 20px;
   line-height: 2rem;
 }
@@ -793,6 +795,8 @@ audio {
   }
   .header {
     width: 100%;
+    min-height: 100vh;
+    overflow: scroll;
   }
   .header .right-header {
     width: 100%;
@@ -805,7 +809,7 @@ audio {
   }
   .left-header .image {
     margin-bottom: 3.5rem;
-    width: 100%;
+    width: 100% !important;
     height: 30% !important;
   }
   .controls {
@@ -910,20 +914,36 @@ audio {
     padding-bottom: 6rem;
     padding-left: 6rem;
   }
-  .left-header {
-    grid-row: 3;
-  }
-  .left-header .image {
-    margin-right: auto;
-    margin-left: auto;
-  }
   .header-content {
     width: 100%;
-  }
-  .header-content .right-header {
+    min-height: 100vh !important;
+    grid-template-columns: repeat(1, 1fr);
+    overflow-y: scroll !important;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
-    margin-left: 7rem;
+    align-items: center;
+  }
+  .left-header {
+    display: none !important;
+    display: flex;
+    min-height: 100vh !important;
+    grid-row: -2;
+    width: 50% !important;
+    min-height: 50% !important;
+  }
+  .left-header .image img {
+    width: 100px !important;
+    height: 100% !important;
+  }
+  .header-content .right-header {
+    margin-left: 0 !important;
+    width: 100%;
+    margin: auto;
+    padding-right: 0 !important;
+  }
+  .header-content .right-header h1 {
+    margin-right: 0 !important;
   }
 }
 @media screen and (max-width: 1432px) {
@@ -942,7 +962,6 @@ audio {
   }
   .header {
     padding: 0;
-    overflow-y: scroll;
   }
   .header .right-header p {
     margin-left: 50px !important;
@@ -954,7 +973,7 @@ audio {
     margin-right: 5rem;
   }
   .left-header .image {
-    width: 70% !important;
+    width: 60% !important;
     height: 90% !important;
   }
   .portfolios {
@@ -968,9 +987,9 @@ audio {
 }
 @media screen and (max-width: 500px) {
   .header-content {
-    font-size: 12px;
+    width: 100%;
+    font-size: 15px;
     padding: 0px;
-    margin: 0px;
   }
   .header-content .name {
     font-size: 20px;

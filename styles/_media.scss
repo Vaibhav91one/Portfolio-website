@@ -12,8 +12,8 @@
     .header {
         width: 100%;
         // padding: 0;
-        // min-height: 100vh;
-        // overflow: scroll;
+        min-height: 100vh;
+        overflow: scroll;
         // margin-left: 2rem;
     }
     .header-content {
@@ -43,7 +43,7 @@
     .left-header .image {
         // margin-top: 5rem;
         margin-bottom: 3.5rem;
-        width: 100%;
+        width: 100% !important;
         height: 30% !important ;
         // object-fit:cover;
     }
@@ -168,23 +168,44 @@
     #home {
         // overflow: hidden;
     }
-    .left-header{
-        // margin-left: 1rem;
-        grid-row: 3;
-
-        // scroll-behavior: smooth;
-    }
-    .left-header .image {
-        margin-right: auto;
-        margin-left: auto;
-    }
     .header-content {
         width: 100%;
-    }
-    .header-content .right-header {
+        min-height: 100vh !important;
+        grid-template-columns: repeat(1, 1fr);
+            overflow-y: scroll !important;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    .left-header{
+        display: none !important;
         display: flex;
-        justify-content: center;
-        margin-left: 7rem;
+        min-height: 100vh !important;
+        grid-row: -2;
+        width: 50% !important;
+        min-height: 50% !important;
+    }
+
+    
+    .left-header .image
+    {
+        
+    img{
+        width: 100px !important;
+        height: 100% !important;
+    }
+}
+    .header-content .right-header {
+        margin-left: 0 !important;
+        width: 100%;
+        margin: auto;
+        padding-right: 0 !important;
+         h1{
+            // margin-left: 10rem;
+        // width: 100%;
+            margin-right: 0!important;
+         }
     }
 }
 
@@ -217,7 +238,7 @@
     }
     .header {
         padding: 0;
-        overflow-y: scroll;
+        // overflow-y: scroll;
     }
 
     .header .right-header p {
@@ -234,8 +255,11 @@
     // }
 
     .left-header .image {
-        width: 70% !important;
-        height: 90% !important;
+        // width: 70% !important;
+        // height: 90% !important;
+        width: 60% !important;
+        height: 90%!important;
+        // margin: auto 0px;
     }
 
     .left-header .image img {
@@ -243,6 +267,7 @@
         // width: 90% !important;
         // height: 100% !important;
     // border-radius: none !important;
+ 
     }
 
     .portfolios {
@@ -262,9 +287,12 @@
 
 @media screen and (max-width: 500px) {
     .header-content {
-        font-size: 12px;
+        width: 100%;
+        font-size: 15px;
         padding: 0px;
-        margin: 0px;
+        // margin: 0px;
+        // margin-left: -5rem !important;
+
         .name {
             font-size: 20px;
         }

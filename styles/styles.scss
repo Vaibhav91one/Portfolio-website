@@ -219,15 +219,16 @@ section {
    
 }
 .header-content .left-header .h-shape {
+    display: none;
     transition: all 0.4s ease-in-out;
-    width: 65%;
+    width: 100%;
     height: 100%;
     background-color: var(--color-secondary);
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
-    clip-path: polygon(0 0, 36% 0, 49% 100%, 0% 100%);
+    clip-path: polygon(0 0, 16% 0, 39% 100%, 0% 100%);
 }
 .header-content .left-header .image {
     
@@ -288,6 +289,7 @@ section {
     justify-content: flex-start;
 }
 .right-header p {
+    display: flex;
     margin: 20px 20px;
     line-height: 2rem;
 }
