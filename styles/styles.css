@@ -27,7 +27,7 @@
 .light-mode {
   --color-primary: #ffffff;
   --color-secondary: #000;
-  --color-white:#12c40cf5 ;
+  --color-white:#4f9b31f5 ;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -37,8 +37,8 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --color-seagreen0: #000;
-  --color-radiant: #14ff89;
-  --color-clipath: #78d6a9f5;
+  --color-radiant: #1cb367;
+  --color-clipath: #1f6f48f5;
   --br-sm-2: 14px;
   --box-shadow-1: 2px 2px 14px rgba(0, 0, 0, 0.3);
 }
