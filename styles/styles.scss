@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -26,8 +28,8 @@
 
 .light-mode {
     --color-primary: #ffffff;
-    --color-secondary: #000;
-    --color-white:#4f9b31f5 ;
+    --color-secondary: #7ef8759b;
+    --color-white: #4f9b31f5;
     --color-black: #000;
     --color-grey0: #f8f8f8;
     --color-grey-1: #dbe1e8;
@@ -43,17 +45,19 @@
     --box-shadow-1: 2px 2px 14px rgba(0, 0, 0, 0.3);
 }
 
-h1,p, .info{
+h1,
+p,
+.info {
     color: var(--color-white);
 }
 
-.info{
-    color: var(--color-white)!important;
+.info {
+    color: var(--color-white) !important;
 }
 
 body {
-    font-family: "M PLUS 1p", sans-serif;
-    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    // font-size: 1.1rem;
     background-color: var(--color-primary);
     color: var(--color-white);
     transition: all 0.4s ease-in-out;
@@ -216,7 +220,6 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
-   
 }
 .header-content .left-header .h-shape {
     display: none;
@@ -231,7 +234,6 @@ section {
     clip-path: polygon(0 0, 16% 0, 39% 100%, 0% 100%);
 }
 .header-content .left-header .image {
-    
     border-radius: var(--br-sm-2);
     height: 80%;
     width: 50%;
@@ -239,8 +241,8 @@ section {
     background-color: var(--color-clipath);
     transition: all 0.2s ease-in-out;
     padding: 0;
-    &:hover{
-        box-shadow: 2px 1px 29px 0px rgba(0,0,0,0.75);
+    &:hover {
+        box-shadow: 2px 1px 29px 0px rgba(0, 0, 0, 0.75);
         transform: translateY(-1%);
     }
 }
@@ -266,23 +268,22 @@ section {
     align-items: center;
     padding-right: 15rem;
     margin: 0.5rem;
+    text-align: start;
 }
 
 .right-header .name {
     font-size: 3rem;
     padding: 3px;
-    margin: 0.5rem;
     display: flex;
-    transform: translateX(-30%);
     flex-direction: column;
-    align-items: flex-start;
     justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .right-header .name span {
     border-radius: 10px;
     background-color: var(--color-secondary);
-    padding: 0.1rem 0.2rem;
+    padding: 10px;
     margin: 0.3rem;
     display: flex;
     align-items: flex-start;
@@ -290,8 +291,7 @@ section {
 }
 .right-header p {
     display: flex;
-    margin: 20px 20px;
-    line-height: 2rem;
+    margin: 20px 0px;
 }
 
 .btn-con {
@@ -398,8 +398,8 @@ section {
 
 .right-about {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
+    grid-template-columns: repeat(2, 1fr);
+
     // grid-gap: rem;
 }
 
@@ -460,12 +460,11 @@ section {
     list-style-type: disc !important;
     padding-bottom: 15px;
 }
-ul li{
+ul li {
     list-style: circle;
     margin: 10px;
     font-size: 20px;
 }
-    
 
 .left-about p {
     padding: 1rem;
@@ -473,7 +472,7 @@ ul li{
     font-size: 15px;
     // color: var(--color-grey-1);
 }
-.left-about .btn-con{
+.left-about .btn-con {
     width: 100%;
     height: 100%;
     font-size: 20px;
@@ -543,7 +542,7 @@ ul li{
 .about-stats .progress-bars .progress-bar .progress-title .con {
     font-weight: 10rem;
     font-size: 1rem;
-    color: var(--color-secondary)!important;
+    color: var(--color-secondary) !important;
     transition: all 0.4s ease-in-out;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
@@ -624,9 +623,9 @@ ul li{
 .portfolios .portfolio-item img {
     height: 200px;
     border-radius: 15px;
-    width:  100%;
-  object-fit: cover; 
-  object-position: center; 
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .portfolios .portfolio-item .hover-items {
@@ -671,7 +670,7 @@ ul li{
 }
 
 .portfolios .portfolio-item .hover-items h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: var(--color-primary);
     border-radius: 15px;
     padding: 1rem;
@@ -787,7 +786,6 @@ ul li{
             box-shadow: var(--box-shadow-1);
             cursor: pointer;
         }
-        
     }
 }
 audio {

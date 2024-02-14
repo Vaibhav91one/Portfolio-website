@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -26,8 +27,8 @@
 
 .light-mode {
   --color-primary: #ffffff;
-  --color-secondary: #000;
-  --color-white:#4f9b31f5 ;
+  --color-secondary: #7ef8759b;
+  --color-white: #4f9b31f5;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -43,7 +44,9 @@
   --box-shadow-1: 2px 2px 14px rgba(0, 0, 0, 0.3);
 }
 
-h1, p, .info {
+h1,
+p,
+.info {
   color: var(--color-white);
 }
 
@@ -52,8 +55,7 @@ h1, p, .info {
 }
 
 body {
-  font-family: "M PLUS 1p", sans-serif;
-  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
   background-color: var(--color-primary);
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
@@ -269,23 +271,22 @@ section {
   align-items: center;
   padding-right: 15rem;
   margin: 0.5rem;
+  text-align: start;
 }
 
 .right-header .name {
   font-size: 3rem;
   padding: 3px;
-  margin: 0.5rem;
   display: flex;
-  transform: translateX(-30%);
   flex-direction: column;
-  align-items: flex-start;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .right-header .name span {
   border-radius: 10px;
   background-color: var(--color-secondary);
-  padding: 0.1rem 0.2rem;
+  padding: 10px;
   margin: 0.3rem;
   display: flex;
   align-items: flex-start;
@@ -294,8 +295,7 @@ section {
 
 .right-header p {
   display: flex;
-  margin: 20px 20px;
-  line-height: 2rem;
+  margin: 20px 0px;
 }
 
 .btn-con {
@@ -662,7 +662,7 @@ ul li {
 }
 
 .portfolios .portfolio-item .hover-items h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: var(--color-primary);
   border-radius: 15px;
   padding: 1rem;
