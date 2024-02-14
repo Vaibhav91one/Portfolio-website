@@ -409,7 +409,7 @@ section {
     box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.3);
     margin: 10px;
     border-radius: 10px;
-    // height: 10rem;
+    height: 10rem;
     padding: 10px;
     font-size: 20px;
     width: 90%;
@@ -626,6 +626,7 @@ ul li{
     height: 300px;
     object-fit: cover;
     border-radius: 15px;
+    aspect-ratio: 1/1;
 }
 
 .portfolios .portfolio-item .hover-items {
