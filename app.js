@@ -39,18 +39,18 @@ function PageTransition(){
     var audio = document.getElementById('audio');
     var isPlaying = false;
     const Themebtn2 = document.querySelector(".theme-btn-2");
-    Themebtn2.addEventListener("click", ()=>{
-        // let element = document.getElementById('music');
-        if(isPlaying == false){
-            audio.play()
-            isPlaying = true;
-        }
-        else {
-            audio.pause()
-            isPlaying = false;
-        }
-        // element.classList.toggle("fas fa-pause");
-    })
+    // Themebtn2.addEventListener("click", ()=>{
+    //     // let element = document.getElementById('music');
+    //     if(isPlaying == false){
+    //         audio.play()
+    //         isPlaying = true;
+    //     }
+    //     else {
+    //         audio.pause()
+    //         isPlaying = false;
+    //     }
+    //     // element.classList.toggle("fas fa-pause");
+    // })
 }
 
 PageTransition();
