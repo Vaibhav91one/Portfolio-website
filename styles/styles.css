@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 :root {
   --color-primary: #191d2b;
   --color-secondary: #27ae60;
@@ -990,7 +1000,10 @@ audio {
 }
 @media screen and (max-width: 500px) {
   .header-content {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 15px;
     padding: 0px;
   }
